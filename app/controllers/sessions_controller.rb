@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
   def new
-
   end
 
   def create
@@ -9,7 +8,7 @@ class SessionsController < ApplicationController
       redirect_to '/login'
     else
       session[:name] = params[:name]
-      redirect_to '/secrets/show'
+      redirect_to '/'
     end
   end
 
